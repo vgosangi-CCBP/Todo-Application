@@ -27,7 +27,7 @@ const initializeDBAndServer = async () => {
 
 initializeDBAndServer();
 
-// API 1
+// API 1 second
 app.get("/todos/", async (request, response) => {
   const { status = "", priority = "", search_q = "" } = request.query;
   console.log(search_q);
